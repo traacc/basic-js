@@ -13,18 +13,15 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function getSumOfDigits(n) {
+  let nn = n;
   let sum = n;
   let tmp = 0;
-  while(sum<10){
-    
-    while(n>0){
-      
-      tmp = n%10
-      sum += tmp;
-      n = Math.floor(n /= 10);
-      
-    }
-  }
+  /*while(sum>10){
+    tmp = nn%10
+    sum += tmp;
+    if(nn<1) break;
+    nn = Math.floor(nn /= 10);
+  }*/
   console.log(sum);
   return sum;
 }

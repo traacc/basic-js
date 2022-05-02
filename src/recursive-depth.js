@@ -14,7 +14,7 @@ const { NotImplementedError } = require('../extensions/index.js');
  */
 class DepthCalculator {
   calculateDepth(arr) {
-    let nestes = 1;
+    let nestes = 0;
     for(let el of arr){
       if(Array.isArray(el)){
         nestes++;
